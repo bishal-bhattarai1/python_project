@@ -14,5 +14,4 @@ else:
         print(f"Given number:- {number} is prime number.")
 
 
-print ("------ ----- ---------- ")
-
+print ("------------------------ ")
