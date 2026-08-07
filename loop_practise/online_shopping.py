@@ -5,12 +5,12 @@ highest_bill = 0
 highest_customer = ''
 total_sales = 0
 
-for customer in range(1,number_of_customer+1):
+for customer in range(1, number_of_customer+1):
     customer_name = input("Enter the customer name: ")
 
     total_bill = 0
     number_of_product = int(input("Enter the number_of_product: "))
-    for product in range(1,number_of_product + 1):
+    for product in range(1, number_of_product + 1):
         product_name = input("Enter the product name: ")
         quantity = int(input("Enter the quantity: "))
         price_per_item = int(input("Enter the price: "))
