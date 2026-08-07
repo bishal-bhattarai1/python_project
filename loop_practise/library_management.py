@@ -13,6 +13,7 @@ for member in range(number_of_members):
 
     total_book_borrowed += number_of_books_borrowed
     total_fine = 0
+
     for books in range(number_of_books_borrowed):
         book_name = input("Enter the book name: ")
 
@@ -31,6 +32,7 @@ for member in range(number_of_members):
 
         
         total_fine += fine
+        
     total_fine_collected += total_fine
 
     if total_fine > highest_fine:
