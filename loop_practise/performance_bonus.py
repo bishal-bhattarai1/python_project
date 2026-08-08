@@ -7,6 +7,8 @@ highest_salary = 0
 highest_employee = ""
 
 total_salary = 0
+excellent_employee = 0
+no_bonus_employee = 0
 
 for employee in range(1,number_of_employee+1):
     employee_name = input("Enter the employee name: ")
