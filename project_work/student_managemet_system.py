@@ -31,6 +31,24 @@ def search_student():
     for student in students:
         if query == student["id"] or query.lower() == student["name"].lower():
             print(f"Student Found: ID: {student["id"]}, name: {student["name"]}, age: {student["age"]}, grade: {student["grade"]}")
+            found = True
+
+    if not found:
+        print("Student not Found. \n")
         
 
-search_student()
+# search_student()
+
+
+#update 
+# query -> student["id"]
+def update_student():
+    query = input("Enter the id for search : ")
+    for student in students:
+        if student["id"] == query:
+            student["name"] = input("Enter the student name: ")
+            student["age"] = input("Enter the student age: ")
+            student["grade"] = input("Enter the student grade: ")
+            
+
+        
