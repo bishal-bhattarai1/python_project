@@ -1,0 +1,32 @@
+students = []
+
+# Function to add new student
+def add_student():
+    student = {}
+    student['id'] = input("Enter student ID: ")
+    student['name'] = input("Enter student name: ")
+    student['age'] = input("Enter student age: ")
+    student['grade'] = input("Enter student grade: ")
+    students.append(student)
+    print(student)
+    print("✅ Student added successfully!\n")
+
+# add_student()
+# view students
+
+def view_students():
+    if not students:
+        print("No Student Found.")
+        return  # tala ko code lai chalna diday naa 
+    for student in students:
+        print(f"ID: {student["id"]}, name: {student["name"]}, age: {student["age"]}, grade: {student["grade"]}")
+
+# view_students()
+
+
+# Serach Student 
+def search_student():
+    query = input("Enter id or name for search: ")
+    found = False
+
+    
