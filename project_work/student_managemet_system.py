@@ -11,7 +11,7 @@ def add_student():
     print(student)
     print("✅ Student added successfully!\n")
 
-# add_student()
+add_student()
 # view students
 
 def view_students():
@@ -28,5 +28,9 @@ def view_students():
 def search_student():
     query = input("Enter id or name for search: ")
     found = False
+    for student in students:
+        if query == student["id"] or query.lower() == student["name"].lower():
+            print(f"Student Found: ID: {student["id"]}, name: {student["name"]}, age: {student["age"]}, grade: {student["grade"]}")
+        
 
-    
+search_student()
