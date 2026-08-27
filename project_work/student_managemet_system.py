@@ -74,7 +74,7 @@ def total_students():
 
 def main_menu():
     while True:
-        print("==========Student Mangement System ==========")
+        print("\n==========Student Mangement System ==========")
         print("1. Add Student")
         print("2. View All Students")
         print("3. Search Student")
@@ -82,6 +82,7 @@ def main_menu():
         print("5. Delete Student")
         print("6. Total Students")
         print("7. Exit")
+        print("======================================\n")
         choice = input("Enter your choice (1-7): ")
 
         if choice == "1":
@@ -102,4 +103,4 @@ def main_menu():
         else:
             print("Invalid Choice. Try again")
 
-    main_menu()
+main_menu()
