@@ -64,5 +64,23 @@ def delete_student():
             return
     print("Student not found.")
 
-delete_student()
-print(students)
+
+#to find total number fo students
+def total_students():
+    print(f"Total number of students is",len(students))
+
+
+# main menu
+
+def main_menu():
+    while True:
+        print("==========Student Mangement System ==========")
+        print("===== Student Management System =====")
+        print("1. Add Student")
+        print("2. View All Students")
+        print("3. Search Student")
+        print("4. Update Student")
+        print("5. Delete Student")
+        print("6. Total Students")
+        print("7. Exit")
+        choice = input("Enter your choice (1-7): ")
