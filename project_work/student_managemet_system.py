@@ -11,7 +11,7 @@ def add_student():
     print(student)
     print("✅ Student added successfully!\n")
 
-add_student()
+
 # view students
 
 def view_students():
@@ -37,7 +37,7 @@ def search_student():
         print("Student not Found. \n")
         
 
-# search_student()
+
 
 
 #update 
@@ -75,7 +75,6 @@ def total_students():
 def main_menu():
     while True:
         print("==========Student Mangement System ==========")
-        print("===== Student Management System =====")
         print("1. Add Student")
         print("2. View All Students")
         print("3. Search Student")
@@ -84,3 +83,23 @@ def main_menu():
         print("6. Total Students")
         print("7. Exit")
         choice = input("Enter your choice (1-7): ")
+
+        if choice == "1":
+            add_student()
+        elif choice == "2":
+            view_students()
+        elif choice == "3":
+            search_student()
+        elif choice == "4":
+            update_student()
+        elif choice == "5":
+            delete_student()
+        elif total_students():
+            total_students()
+        elif choice == "7":
+            print("Existing Program. Good Bye!!")
+            break
+        else:
+            print("Invalid Choice. Try again")
+
+    main_menu()
