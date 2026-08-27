@@ -58,8 +58,11 @@ def update_student():
 def delete_student():
     query = input("Enter the id to delete: ")
     for student in students:
-        if students["id"] == query:
-            students.remove[student]
+        if student["id"] == query:
+            students.remove(student)
             print("Student Deleted Sucessfully")
             return
     print("Student not found.")
+
+delete_student()
+print(students)
