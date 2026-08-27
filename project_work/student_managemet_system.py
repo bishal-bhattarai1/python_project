@@ -49,6 +49,7 @@ def update_student():
             student["name"] = input("Enter the student name: ")
             student["age"] = input("Enter the student age: ")
             student["grade"] = input("Enter the student grade: ")
-            
+            print("Student Update.")
+            return
+    print("Student not found.")
 
-        
